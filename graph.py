@@ -1,3 +1,7 @@
+from cgi import parse_qs
+from template import html
+import matplotlib.pyplot as plt
+
 def application (environ, start_response): 
   if environ ['PATH_INFO'] == '/graph.png:
     try:
